@@ -1,0 +1,12 @@
+#app {
+  // 侧边栏
+  .sidebar-righter {
+    transition: width 0.28s;
+    width: 122px !important;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+    border-right: 1px solid #ebeef5;
+  }
+}

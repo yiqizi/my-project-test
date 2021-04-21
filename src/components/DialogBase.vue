@@ -39,6 +39,7 @@ export default {
         }
     },
     created() {
+        console.log('弹窗------------22222222----------')
         
     },
     methods: {

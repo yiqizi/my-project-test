@@ -1,0 +1,97 @@
+.videoMaterial {
+  .material_head{
+    margin-bottom:20px;
+    display: flex;
+      flex-direction: row;
+      .select{
+        display: flex;
+        padding-left: 5px;
+      }
+      .el-input{
+        width: auto;
+        margin-right:10px;
+      }
+      .upload-demo{
+        width:100%;
+        position:relative;
+        .el-upload{
+          position: absolute;
+          right: 20px;
+          top: -65px;
+        }
+        .el-upload-list{
+          .el-upload-list__item {
+              width: 100% !important;
+              height: 30px !important;
+              text-align: left;
+              background: #f1efef;
+          }
+        }
+      }
+  }
+  .material_wrapper{
+    max-height:390px;
+    min-height:200px;
+    overflow-y: auto;
+    .item-checkbox {
+      width: 100%;
+      height: 30px;
+      padding-left: 20px;
+      line-height: 30px;
+      text-align: left;
+    }
+    .cell-item-checkbox {
+      cursor: default;
+
+      video {
+        padding-bottom: 0px !important;
+      }
+    }
+    .video-checked-active {
+      border: 2px solid $globalMainColor!important;
+    }
+  }
+  /* 视频列表区域样式 */
+  ul.video_list{
+    li{
+      border: 1px solid #ddd;
+      cursor:pointer;
+      &.video_active{
+        border: 2px dashed $globalMainColor!important;
+      }
+    }
+  }
+  .video_head{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding:5px 20px;
+  }
+  .video_body{
+    border-top: 1px solid #ddd;
+    p{
+      text-align:left;
+      padding:5px 20px;
+    }
+    video{
+      width: 100%;
+      padding: 20px;
+      padding-top: 0;
+      height: 210px;
+    }
+  }
+
+  .pages{
+    text-align: center;
+    margin-top: 45px;
+  }
+  .empty{
+    text-align: center;
+    margin-top: 100px;
+    color: #b6b5c8;
+  }
+
+  .el-pagination__editor.el-input {
+    width: 50px;
+  }
+}

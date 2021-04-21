@@ -1,0 +1,78 @@
+/* 左侧一级菜单 */
+$sidebarMain:rgba(44,45,83,1);
+$sidebarWord:rgba(255,255,255,0.5);
+$sidebarWordHighlight:#fff;
+$line:rgba(101,94,255,1);
+
+/* 左侧二级菜单 */
+$sidebarLevel2Main: #fff;
+$sidebarLevel2BackgroundHighlight: rgb(240,239,255);
+$sidebarLevel2WordHighlight: rgba(101,94,255,1);
+$sidebarLevel2Word: rgba(122,122,141,1);
+$sidebarLevel2Title: rgba(44,45,83,1);
+
+/* 色系表 */
+
+//整体主色调/一级菜单选中条/二级菜单选中文字色/控件hover边框线/可点击文字色
+$globalMainColor:#655EFF;
+
+//主色按钮及主色边框按钮hover色/可点击文字hover色
+$btnMainHoverColor:#837DFF;
+
+//主色按钮及主色边框按钮按下色/可点击文字按下色
+$btnMainActiveColor:#5A54E5;
+
+//辅助警示提示作用
+$warningColor:#FD932B;
+
+//错误提示文字色/错误边框色/必填项标识色
+$errorColor:#FD4C2B;
+
+//标题文字色
+$titleColor:#161617;
+
+//内容区域主要文字色
+$contentColor:#44434B;
+
+//次级文字色
+$secondaryColor:#44434B;
+
+//默认提示文字
+$defaultTipsColor:rgb(194,194,201);
+
+//辅助文字色/输入框边框色
+$borderColor:#B6B5C8;
+
+//折线图辅助线/分割线
+$chartsLineColor:#C6C6C6;
+
+//折线图次级辅助线
+$chartsSecondaryLineColor:#D3D3D3;
+
+//成功背景色
+$successBackgroundColor:rgba(240,250,232,1);
+
+//成功边框色
+$successBorderColor:rgba(108,213,33,1);
+
+//帮助背景色
+$helpBackgroundColor:rgba(238,243,254,1);
+
+//帮助边框色
+$helpBorderColor:rgba(87,142,250,1);
+
+//警告背景色
+$warningBackgroundColor:rgba(254,244,233,1);
+
+//警告边框色
+$warningBorderColor:rgba(253,147,43,1);
+
+//错误/失败背景色
+$errorBackgroundColor:rgba(254,237,233,1);
+
+//错误/失败边框色
+$errorBorderColor:rgba(253,76,43,1);
+
+$grayColor: #92929B;
+
+

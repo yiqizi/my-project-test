@@ -12,7 +12,6 @@
 
 <script>
 import * as pathToRegexp from 'path-to-regexp'
-// const pathToRegexp = require('path-to-regexp')
 
 export default {
   data() {
@@ -26,7 +25,6 @@ export default {
     }
   },
   created() {
-    console.log('npm-----组件')
     this.getBreadcrumb()
   },
   methods: {
@@ -45,7 +43,6 @@ export default {
         matched = [{ path: '/dashboard', meta: { title: '首页' }}].concat(matched)
       }
       this.levelList = matched
-      console.log('levelList---', this.levelList)
     }
   }
 }

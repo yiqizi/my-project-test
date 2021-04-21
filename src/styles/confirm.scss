@@ -1,0 +1,36 @@
+.setting-custom {
+	.el-icon-success {
+		font-size: 32px;
+		color: rgba(108, 213, 33, 1);
+	}
+	.success,
+	.prompt {
+		display: block;
+	}
+	.success {
+		font-size: 16px;
+		font-weight: 500;
+		color: #44434b;
+		line-height: 22px;
+	}
+	.prompt {
+		padding-top: 10px;
+		font-size: 12px;
+		font-weight: 400;
+		color: #44434b;
+		line-height: 20px;
+	}
+	&.no-cancel .el-button {
+		letter-spacing: 0;
+	}
+}
+.perfect-info-custom {
+	width: 1200px;
+	padding-bottom: 0;
+	.el-message-box__container {
+		padding: 25px;
+	}
+	.el-message-box__btns {
+		padding: 0;
+	}
+}

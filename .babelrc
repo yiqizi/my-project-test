@@ -18,5 +18,10 @@
       "style": true
     }]
     // "transform-remove-console"  //编译时去掉console.*
-  ]
+  ],
+  // "env": {
+  //   "development":{
+  //     "plugins": ["dynamic-import-node"]
+  //   }
+  // }
 }

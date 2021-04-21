@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>视频</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        video{
+            width:100%;
+            height: -webkit-fill-available;
+        }
+        ::-webkit-scrollbar {
+        width:0px;
+        height:5px;
+        }
+
+    </style>
+</head>
+<body>
+<video src="" controls="controls"></video>
+<script>
+    var iframe = window.frameElement;
+    var url = iframe.getAttribute('data-video');
+    var video = document.querySelector('video');
+    video.src = url;
+
+    iframe.onload = function() {
+        // 提前还原高度
+        // 再在下一轮事件循环中设置新高度
+        video.addEventListener('loadedmetadata', function() {
+            iframe.setAttribute('width', this.videoWidth);
+            iframe.setAttribute('height', this.videoHeight);
+        })
+    }
+</script>
+</body>
+</html>

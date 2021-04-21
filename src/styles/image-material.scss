@@ -1,0 +1,199 @@
+.imageMaterial {
+  .material_head{
+    margin-bottom:20px;
+    display: flex;
+      flex-direction: row;
+      .select{
+        display: flex;
+        padding-left: 5px;
+      }
+      .el-input{
+        width: auto;
+        margin-right:10px;
+      }
+      .upload-demo{
+        width:100%;
+        position:relative;
+        .el-upload{
+          position: absolute;
+          right: 20px;
+          top: -65px;
+        }
+        .el-upload-list{
+          .el-upload-list__item {
+              width: 100% !important;
+              height: 30px !important;
+              text-align: left;
+              background: #f1efef;
+          }
+        }
+      }
+  }
+  .material_wrapper{
+    max-height:390px;
+    min-height:200px;
+    overflow-y: auto;
+    .cell-item {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #efeaea;
+      overflow: hidden;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      cursor: pointer;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        max-width: 100%;
+        @media screen and(-ms-high-contrast:active),(-ms-high-contrast:none){
+          /* 兼容IE10和IE11 */
+          height:100%;
+        }
+      }
+      .item-body{
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        height: 18px;
+        background: rgba(0,0,0,0.39);
+        .item-desc{
+          width: 100%;
+          padding: 0 10px;
+          box-sizing: border-box;
+          height: 100%;
+          color: #fff;
+          text-align: center;
+          line-height: 18px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .item-checkbox {
+        width: 100%;
+        height: 30px;
+        padding-left: 5px;
+        line-height: 30px;
+        text-align: left;
+      }
+    }
+    .cell-item-checkbox {
+      cursor: default;
+    }
+    .img_active{
+      border: 2px dashed $globalMainColor!important;
+    }
+    .img-checked-active {
+      border: 2px solid $globalMainColor!important;
+    }
+  }
+
+  .pages{
+    text-align: center;
+    margin-top: 45px;
+  }
+  .empty{
+    text-align: center;
+    margin-top: 100px;
+    color: #b6b5c8;
+  }
+
+  .el-pagination__editor.el-input {
+    width: 50px;
+  }
+
+
+  /* *******************************系统素材样式*********************************** */
+  .icon_head{
+    margin-bottom:20px;
+    display: flex;
+    flex-direction: row;
+    .title{
+      font-size:14px;
+      font-family:MicrosoftYaHei;
+      color:rgba(68,67,75,1);
+      margin-right:10px;
+      line-height: 30px;
+    }
+    .select{
+      padding-left: 5px;
+      margin-right:10px;
+    }
+  }
+  .icon_wrapper{
+  max-height:390px;
+  min-height:200px;
+  overflow-y: auto;
+  ul{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 10px;
+    @media screen and(-ms-high-contrast:active),(-ms-high-contrast:none){
+      /*兼容IE10和IE11*/
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .cell-item {
+      width: 100%;
+      height: 80px;
+      background: rgba(211,211,211,1);
+      border: 1px solid transparent;
+      cursor: pointer;
+      align-items: center;
+      position: relative;
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      @media screen and(-ms-high-contrast:active),(-ms-high-contrast:none){
+        /*兼容IE10和IE11*/
+        width: 80px;
+        margin-top:14px;
+        margin-left:14px;
+      }
+      &:nth-child(8n){
+        margin-right:0;
+      }
+      img{
+        width: 80px;
+        height:100%;
+        object-fit: scale-down;
+      }
+      .item-desc{
+        width: 100%;
+        height:18px;
+        background:rgba(0,0,0,0.39);
+        color:#fff;
+        text-align:center;
+        line-height:18px;
+        position:absolute;
+        bottom:0;
+        left:0;
+      }
+    }
+    .cell-item-checkbox {
+      height: 120px;
+      cursor: default;
+      img {
+        height: 80px;
+      }
+      .el-checkbox {
+        margin-left: 5px;
+        margin-right: 0;
+      }
+    }
+    .img_active{
+      border: 2px dashed $globalMainColor!important;
+    }
+    .img-checked-active {
+      border: 2px solid $globalMainColor!important;
+    }
+  }
+  }
+}
