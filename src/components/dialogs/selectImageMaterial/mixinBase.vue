@@ -1,5 +1,5 @@
 <script>
-import '@/styles/image-material.scss'
+import '../../../styles/image-material.scss'
 export default {
   name: "mixinBase",
   props: ['max', 'isHave', 'isCheckbox', 'cid', 'selectedData'],

@@ -9,16 +9,21 @@
 </template>
 <script>
 // import Vue from 'vue'
-const Vue = require('vue')
+// debugger
+// import VueUeditorWrap1 from 'vue-ueditor-wrap' // ES6 Module
+// console.log('VueUeditorWrap1', VueUeditorWrap1)
+// // const Vue = require('vue')
 const VueUeditorWrap = require('vue-ueditor-wrap') // ES6 Module
-Vue.component('vue-ueditor-wrap', VueUeditorWrap)
-import utils from '../utils';
-// import dialogSelectImageMaterial from './dialogs/selectImageMaterial/index';
-// import dialogSelectVideo from './dialogs/selectVideo/index';
+console.log('VueUeditorWrap', VueUeditorWrap)
+// Vue.component('vue-ueditor-wrap', VueUeditorWrap)
+// import utils from '@/utils';
+import dialogSelectImageMaterial from '../dialogs/selectImageMaterial/index.vue';
+import dialogSelectVideo from '../dialogs/selectVideo/index.vue';
 export default {
   name: 'RichEditor',
   props: ['richValue', 'myConfig'],
-  // components: {dialogSelectVideo, dialogSelectImageMaterial},
+  components: {VueUeditorWrap, dialogSelectVideo, dialogSelectImageMaterial},
+  inject:['provideEditor'],
   data() {
     return {
       editor:null,//编辑器实例,
@@ -30,9 +35,9 @@ export default {
         // 初始容器宽度
         initialFrameWidth: '100%',
         // 上传文件接口（这个地址是我为了方便各位体验文件上传功能搭建的临时接口，请勿在生产环境使用！！！）
-        serverUrl: `${process.env.DATA_API}/web-file/file-server/api_file_remote_upload.do`,
+        serverUrl: `${this.provideEditor.processDATA_API}/web-file/file-server/api_file_remote_upload.do`,
         // UEditor 资源文件的存放路径，如果你使用的是 vue-cli 生成的项目，通常不需要设置该选项，vue-ueditor-wrap 会自动处理常见的情况，如果需要特殊配置，参考下方的常见问题2
-		UEDITOR_HOME_URL: process.env.NODE_ENV !== 'dev' ? process.env.DOMAIN + '/common-static/UEditor/' : '/static/UEditor/'
+		    UEDITOR_HOME_URL: this.provideEditor.processNODE_ENV !== 'dev' ? this.provideEditor.processDOMAIN + '/common-static/UEditor/' : '/static/UEditor/'
       },
       config: null,
       dialogVisible: false,
@@ -52,8 +57,7 @@ export default {
     }
   },
   created() {
-    console.log('utils----', utils, utils.asyncLoadCss)
-    console.log('富文本--555-', process.env)
+    console.log('公共组件富文本richedtir--555-')
     this.config = Object.assign(this.defaultConfig, this.myConfig);
   },
   mounted() {
@@ -130,7 +134,7 @@ export default {
       this.editor = editorInstance;
       const iframe = editorInstance.iframe;
       const document = iframe.contentDocument;
-      utils.asyncLoadCss(document, this.config.UEDITOR_HOME_URL + 'dialogs/xiumi/xiumi-ue-v5.css').then(()=>{
+      this.utils.asyncLoadCss(document, this.config.UEDITOR_HOME_URL + 'dialogs/xiumi/xiumi-ue-v5.css').then(()=>{
         // console.log('秀米编辑器样式加载成功！')
       }).catch(()=>{
         console.error('秀米编辑器样式加载失败！')

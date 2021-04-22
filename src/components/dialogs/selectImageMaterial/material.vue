@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import utils from "@/utils";
-import mixinBase from './mixinBase';
+// import utils from "@/utils";
+import mixinBase from './mixinBase.vue';
 export default {
   name: "material",
   mixins: [mixinBase],

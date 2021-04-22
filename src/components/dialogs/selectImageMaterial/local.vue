@@ -43,18 +43,19 @@
 
 <script>
 
-import utils from "@/utils";
-import mixinBase from './mixinBase';
+// import utils from "@/utils";
+import mixinBase from './mixinBase.vue';
 export default {
   name: "local",
   mixins: [mixinBase],
   props: ['multipleUpload'],
+  inject:['provideEditor'],
   data() {
     return {
       uploadAble: true,  //上传是否可用(用来清上传器缓存)
 
       /* 本地上传 */
-      uploadUrl:`${process.env.DATA_API}/web-file/file-server/api_file_remote_upload.do`,
+      uploadUrl:`${this.provideEditor.processDATA_API}/web-file/file-server/api_file_remote_upload.do`,
       fileList: [],  //最终用来显示的文件列表
       addList: [],  //添加的文件列表（上传前）
       successList: [],  //上传成功的文件列表(上传后)
@@ -119,7 +120,7 @@ export default {
       }
 
       if(this.isCheckbox){
-        let copyList = utils.deepClone(list);
+        let copyList = this.utils.deepClone(list);
         const num = this.max - this.isHave - this.selectedData.length;
         copyList.forEach((item, index) => {
           if(index + 1 <= num){

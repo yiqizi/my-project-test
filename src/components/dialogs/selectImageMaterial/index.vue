@@ -28,13 +28,13 @@
 </template>
 
 <script>
-import DialogBase from "@/components/DialogBase";
+import DialogBase from "../../DialogBase/index.vue";
 
-import material from "./material";
-import system from "./system";
-import local from "./local";
+import material from "./material.vue";
+import system from "./system.vue";
+import local from "./local.vue";
 
-import utils from "@/utils";
+// import utils from "@/utils";
 export default {
   name: "dialogSelectImageMaterial",
   components: {
@@ -101,6 +101,7 @@ export default {
     }
   },
   created() {
+    console.log('公共组件----图片富文本2222')
     const tabList = [
       {
         "label": "素材图片",
@@ -174,7 +175,7 @@ export default {
         return;
       }
 
-      const data = utils.deepClone(this.selectedData);
+      const data = this.utils.deepClone(this.selectedData);
       this.$emit('imageSelected',  data);
       this.close();
     },

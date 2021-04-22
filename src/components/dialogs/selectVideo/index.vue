@@ -28,12 +28,12 @@
 </template>
 
 <script>
-import DialogBase from "@/components/DialogBase";
+import DialogBase from "../../DialogBase/index.vue";
 
-import material from "./material";
+import material from "./material.vue";
 import local from "./local";
 
-import utils from "@/utils";
+// import utils from "@/utils";
 export default {
   name: "dialogSelectVideo",
   components: {
@@ -43,6 +43,10 @@ export default {
   },
   props: {
       data: {},
+      process: { //环境变量
+        type: String,
+        default: ''
+      },
       dialogVisible: {
           type: Boolean,
           required: true
@@ -94,6 +98,7 @@ export default {
     }
   },
   created() {
+    console.log('process--------', this.process)
     const tabList = [
       {
         "label": "素材视频",
@@ -163,7 +168,7 @@ export default {
         return;
       }
 
-      const data = utils.deepClone(this.selectedData);
+      const data = this.utils.deepClone(this.selectedData);
       this.$emit('videoSelected',  data);
       this.close();
     },

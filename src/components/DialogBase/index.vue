@@ -23,6 +23,7 @@
 </template>
 <script>
 export default {
+    name: "DialogBase",
     data() {
         return {
 
@@ -39,7 +40,7 @@ export default {
         }
     },
     created() {
-        console.log('弹窗------------22222222----------')
+        console.log('公共组件弹窗------------22222222----------')
         
     },
     methods: {

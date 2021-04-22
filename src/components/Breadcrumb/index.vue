@@ -14,6 +14,7 @@
 import * as pathToRegexp from 'path-to-regexp'
 
 export default {
+  name: "breadcrumb",
   data() {
     return {
       levelList: null

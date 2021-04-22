@@ -38,12 +38,8 @@
 </template>
 
 <script>
-// import appConfig from '@/system/appConfig';
-// import {default as mapBase} from "../MapBase";
-// import {debounce} from '../../utils/base.js'
-import mapBase from "@/components/MapBase";
-import appConfig from '@/system/appConfig';
-import { debounce } from '@/utils/base.js'
+import mapBase from "./MapBase.vue";
+// import { debounce } from '@/utils/base.js'
 export default {
   name: "mapSearch",
   extends: mapBase,
@@ -86,15 +82,9 @@ export default {
     };
   },
   created() {
-    console.log('000--', appConfig)
-    /* 加载腾讯地图库,jsonp回调 */
-    // this.$jsonp(appConfig.map.url,{
-    //   key: appConfig.map.key
-    // }).then(()=>{
-    //   this._globalEvent.$emit('mapLoaded');
-    // })
-    
-    this.debounceSearch = debounce(this.search)
+    console.log('------公共组件mapsearch-')
+    console.log(this.utils.debounce)
+    this.debounceSearch = this.utils.debounce(this.search)
   },
   methods: {
     getParentAreaCode(tencentCode) {

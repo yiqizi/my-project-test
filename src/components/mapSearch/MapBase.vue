@@ -1,8 +1,6 @@
 <!--地图组件基类 -->
 
 <script type='es6'>
-import Vue from 'vue';
-import appConfig from '@/system/appConfig';
 export default {
   name: "mapBase",
   props:{

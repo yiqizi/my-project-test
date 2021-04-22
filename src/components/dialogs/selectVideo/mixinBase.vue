@@ -1,5 +1,5 @@
 <script>
-import '@/styles/video-material.scss'
+import '../../../styles/video-material.scss'
 export default {
   name: "mixinBase",
   props: ['max', 'isHave', 'isCheckbox', 'cid', 'selectedData'],
