@@ -117,7 +117,7 @@
 }
 /deep/ .el-icon-close:before{
   content:'';
-  background: url('~@/assets/images/icon_delete_@2x.png') no-repeat center center;
+  background: url('../../assets/images/icon_delete_@2x.png') no-repeat center center;
   background-size: cover;
   width: 18px;
   height: 18px;
