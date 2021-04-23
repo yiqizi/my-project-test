@@ -1,7 +1,7 @@
 <template>
   <span class="mapSearch">
     <!-- <el-button type="text" class="search-map" @click="handleOpen">{{btnTxt}}<i class="el-icon-search"></i></el-button> -->
-    <el-button type="text" class="search-map" @click="handleOpen">{{btnTxt}}<img class="i_map_search" src="../../assets/images/profile/i_map_search.png"  alt="" /></el-button>
+    <el-button type="text" class="search-map" @click="handleOpen">{{btnTxt}}<img class="i_map_search" src="../../assets/images/i_map_search.png"  alt="" /></el-button>
 
     <el-dialog
       title="搜索地图"
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import mapSearch from '@/components/mapSearch'
+import mapSearch from '../mapSearch/index.vue'
   export default {
     components: {
       mapSearch
