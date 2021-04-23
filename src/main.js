@@ -19,12 +19,20 @@ import Breadcrumb from "./components/Breadcrumb/index.vue";
 import DialogBase from "./components/DialogBase/index.vue";
 import mapSearch from "./components/mapSearch/index.vue";
 import RichEditor from "./components/RichEditor/index.vue";
+
+import Pagination from "./components/Pagination/index.vue";
+import dialogPrintList from "./components/printListDialog/index.vue";
+import Empty from "./components/Empty.vue";
+
 const components = [
   // Tag,
   Breadcrumb,
   DialogBase,
   mapSearch,
-  RichEditor
+  RichEditor,
+  Pagination,
+  dialogPrintList,
+  Empty
 ];
 
 // const install = function(Vue, opts = {}) {
@@ -95,7 +103,7 @@ export default {
   //         component.utils = Vue.prototype.utils
   //         console.log('component.prototype.utils--', component.utils)
   //         Vue.component(component.name, component);
-          
+
   //     });
   //     // Vue.component(Breadcrumb.name, Breadcrumb)
   // }
