@@ -1,0 +1,30 @@
+{
+  "id": "1347417",
+  "name": "新零售",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "816628",
+      "name": "跳转",
+      "font_class": "tiaozhuan",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "1166460",
+      "name": "购物车 ",
+      "font_class": "gouwuche2",
+      "unicode": "e716",
+      "unicode_decimal": 59158
+    },
+    {
+      "icon_id": "5387527",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "eaf3",
+      "unicode_decimal": 60147
+    }
+  ]
+}
