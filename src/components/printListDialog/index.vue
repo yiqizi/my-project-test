@@ -23,22 +23,8 @@
 
 <script>
   export default {
-    name: "dialogPrintList",
+    name: "DialogPrintList",
     props: ["printDialogVisible","printPath","printQuery"],
-    // props: {
-    //   printDialogVisible: {
-    //     type: Boolean,
-    //     default: false
-    //   },
-    //   printPath:{
-    //     type:String,
-    //     default:''
-    //   },
-    //   printQuery:{
-    //     type:Object,
-    //     default:{}
-    //   }
-    // },
     computed: {
       disabledSure() {
         if(this.printRadio == null){return true}
@@ -51,10 +37,6 @@
     },
     methods: {
       handleSubmit() {
-        // console.log(this.printType);
-        // console.log(this.printPath)
-        // console.log(this.printQuery)
-
         //小票配送单
         if(this.printRadio==1){
           this._apis.order.getPrinterSetDetail().then(res => {

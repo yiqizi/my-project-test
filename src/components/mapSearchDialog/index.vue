@@ -33,6 +33,7 @@
 <script>
 import mapSearch from '../mapSearch/index.vue'
   export default {
+    name: "dialog-map-search",
     components: {
       mapSearch
     },

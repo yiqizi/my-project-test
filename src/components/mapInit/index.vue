@@ -3,7 +3,6 @@
 import appConfig from "../../system/appConfig.js";
 export default {
   name: "mapInit",
-
   data() {
     return {
     };
@@ -15,7 +14,6 @@ export default {
   methods: {
       initMap() {
         /* 加载腾讯地图库,jsonp回调 */
-        console.log('pppp', appConfig.map)
         this.$jsonp(appConfig.map.url,{
             key: appConfig.map.key
         }).then(()=>{
