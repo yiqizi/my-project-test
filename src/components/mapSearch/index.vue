@@ -38,8 +38,7 @@
 </template>
 
 <script>
-import mapBase from "./MapBase.vue";
-// import { debounce } from '@/utils/base.js'
+import mapBase from "../MapBase.vue";
 export default {
   name: "map-search",
   extends: mapBase,
@@ -357,7 +356,6 @@ export default {
     },
     // 通过address 获取经纬度
     getGeocoderByAddress() {
-      // console.log('-----获取经纬度----')
       this._apis.map.getGeocoderAddress({ address: this.address }).then((res) => {
         const lng = res.result.location.lng
         const lat = res.result.location.lat

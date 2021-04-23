@@ -1,6 +1,6 @@
 <!--地图组件基类 -->
 
-<script type='es6'>
+<script type="es6">
 export default {
   name: "mapBase",
   props:{
@@ -111,9 +111,9 @@ export default {
         Lat = 39.9046900000
         lng = 116.4071700000
       }
-      // console.log('-----init---', Lat, lng)
+      console.log('-----init---', Lat, lng)
       this.centerObj = new qq.maps.LatLng(Lat, lng);
-      // console.log('-----this.centerObj---', this.centerObj)
+      console.log('-----this.centerObj---', this.centerObj)
       this.mapObj = new qq.maps.Map(this.$refs.mapContainer, {
         zoom: this.zoom,
         center: this.centerObj,
