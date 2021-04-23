@@ -87,13 +87,14 @@ export default {
 
 
   mounted(){
+    console.log('999999999999999',this._globalEvent)
     if(!this.mapLoaded) {
       this._globalEvent.$on('mapLoaded', ()=>{
-        // console.log(11111111111111111)
+        console.log(11111111111111111)
         this.init();
       });
     }else{
-        // console.log(222222222222222222)
+        console.log(222222222222222222)
       this.init();
     }
   },

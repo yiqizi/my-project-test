@@ -41,7 +41,7 @@
 import mapBase from "./MapBase.vue";
 // import { debounce } from '@/utils/base.js'
 export default {
-  name: "mapSearch",
+  name: "map-search",
   extends: mapBase,
   props: {
     address: {
@@ -82,8 +82,9 @@ export default {
     };
   },
   created() {
-    console.log('------公共组件mapsearch-')
+    console.log('------公共组件mapsearch-', this._apis.map)
     console.log(this.utils.debounce)
+    console.log('mapBase', mapBase)
     this.debounceSearch = this.utils.debounce(this.search)
   },
   methods: {

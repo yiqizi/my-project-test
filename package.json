@@ -1,8 +1,8 @@
 {
   "name": "yiqizi-project-test",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "my-project-test",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

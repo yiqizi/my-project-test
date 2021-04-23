@@ -8,8 +8,8 @@ module.exports = {
         filename: "index.js",
         library: "Modal",
         libraryTarget: "umd",
-        path: path.resolve(__dirname, './dist1'),
-        publicPath: '/dist1/',
+        path: path.resolve(__dirname, './dist'),
+        publicPath: '/dist/',
     },
     resolve: {
         extensions: ['.js', '.vue', '.json'],

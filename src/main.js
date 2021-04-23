@@ -72,11 +72,19 @@ const components = [
 // }
 
 const install = (Vue) => {
+  // const utils = Vue.prototype.utils
+  // Object.keys(utils).forEach(key => {
+  //   Vue.filter(key, utils[key])
+  // })
   components.forEach(component => {
-      component.utils = Vue.prototype.utils
-      console.log('component.prototype.utils--', component.utils)
-      Vue.component(component.name, component);
-      
+    const whiteList = ['utils', '_routeTo', '_globalEvent', '_apis', 'confirm', 'invokeType', '$pcaa']
+    for(let key in Vue.prototype) {
+      if(whiteList.includes(key)) {
+        component[key] = Vue.prototype[key]
+      }
+    }
+    console.log('component.prototype.utils--', component.utils, component._apis)
+    Vue.component(component.name, component);
   });
   // Vue.component(Breadcrumb.name, Breadcrumb)
 }
