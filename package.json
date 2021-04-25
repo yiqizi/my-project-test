@@ -23,10 +23,12 @@
   "homepage": "https://github.com/yiqizi/my-project-test#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "crypto-js": "^4.0.0",
     "css-split-webpack-plugin": "^0.2.6",
     "echarts": "^4.8.0",
     "element-ui": "^2.13.0",
     "file-saver": "^2.0.2",
+    "jquery": "^3.6.0",
     "lodash": "^4.17.20",
     "scss-loader": "^0.0.1",
     "tinycolor2": "^1.4.1",

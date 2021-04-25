@@ -14,6 +14,13 @@ import SvgIcon from "./components/SvgIcon/index.vue";
 import wxColor from "./components/Wxcolor/index.vue";
 
 
+import chartBase from "./components/ChartBase/index.vue";
+import form from "./components/Form/index.vue";
+import NumberInput from "./components/NumberInput/index.vue";
+import tableBase from "./components/TableBase/index.vue";
+import treeMenu from "./components/TreeMenu/index.vue";
+
+
 
 
 
@@ -32,7 +39,12 @@ const components = [
   Page404,
   Hamburger,
   SvgIcon,
-  wxColor
+  wxColor,
+  chartBase,
+  form,
+  NumberInput,
+  tableBase,
+  treeMenu
 ];
 
 const install = (Vue) => {
