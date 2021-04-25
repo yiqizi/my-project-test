@@ -4,6 +4,9 @@ import mapSearch from "./components/mapSearch/index.vue";
 import RichEditor from "./components/RichEditor/index.vue";
 import mapSearchDialog from "./components/mapSearchDialog/index.vue";
 import mapInit from "./components/mapInit/index.vue";
+import dialogSelectImageMaterial from "./components/dialogs/selectImageMaterial/index.vue";
+import dialogSelectVideo from "./components/dialogs/selectVideo/index.vue";
+import exportTipDialog from "./components/dialogs/exportTipDialog/index.vue";
 import Pagination from "./components/Pagination/index.vue";
 import dialogPrintList from "./components/printListDialog/index.vue";
 import Empty from "./components/Empty/index.vue";
@@ -32,6 +35,9 @@ const components = [
   RichEditor,
   mapSearchDialog,
   mapInit,
+  dialogSelectImageMaterial,
+  dialogSelectVideo,
+  exportTipDialog,
   Pagination,
   dialogPrintList,
   Empty,
@@ -54,6 +60,7 @@ const install = (Vue) => {
   // })
   components.forEach(component => {
     const whiteList = ['utils', '_routeTo', '_globalEvent', '_apis', 'confirm', 'invokeType', '$pcaa']
+    console.log('999999')
     for(let key in Vue.prototype) {
       if(whiteList.includes(key)) {
         component[key] = Vue.prototype[key]

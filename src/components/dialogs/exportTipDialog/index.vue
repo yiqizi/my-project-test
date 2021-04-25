@@ -3,15 +3,14 @@
     <DialogBase :visible.sync="visible" @submit="submit" title="提示" :hasCancel="hasCancel">
         <div class="c_container">
             <div class="c_cont">
-                <img src="../../assets/images/finance/icon_error.png" alt="">
+                <img src="../../../assets/images/icon_error.png" alt="">
                 <span>导出数据量超过1000条，建议分时间段导出。<br/>点击确定导出当前筛选下的前1000条数据，点击取消请重新筛选。</span>
             </div>
         </div>
     </DialogBase>
 </template>
 <script>
-import clientApi from '@/api/client';
-import DialogBase from '@/components/DialogBase'
+import DialogBase from '../../DialogBase'
 export default {
     name: "exportTipDialog",
     props: ['data'],
@@ -22,6 +21,7 @@ export default {
     },
     methods: {
         submit() {
+            console.log('公共组件----导出弹窗提示')
         let exportApi = this.data.api.split('.');
         let query = this.data.query;
         let flag = 0;
