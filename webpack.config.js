@@ -1,6 +1,7 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CSSSplitWebpackPlugin = require('css-split-webpack-plugin').default;
 const path = require('path')
 
 function resolve (dir) {
@@ -115,6 +116,10 @@ module.exports = {
         // }),
         // new HtmlWebpackPlugin({
         //     template: "./index.html"
-        // })
+        // }),
+        // new CSSSplitWebpackPlugin({ // css-split-webpack-plugin插件的作用是将大尺寸的css再分割成多个css文件
+        //     size: 4000,
+        //     filename: 'dist/css/[name]-[part].[ext]'
+        // }),
     ]
 }

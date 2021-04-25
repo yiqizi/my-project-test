@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import mapBase from "../MapBase.vue";
+import mapBase from "./MapBase.vue";
 export default {
   name: "map-search",
   extends: mapBase,
