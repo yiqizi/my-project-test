@@ -2,12 +2,21 @@ import Breadcrumb from "./components/Breadcrumb/index.vue";
 import DialogBase from "./components/DialogBase/index.vue";
 import mapSearch from "./components/mapSearch/index.vue";
 import RichEditor from "./components/RichEditor/index.vue";
-import mapSearchDialog from "./components/mapSearchDialog/index.vue"
-import mapInit from "./components/mapInit/index.vue"
-
+import mapSearchDialog from "./components/mapSearchDialog/index.vue";
+import mapInit from "./components/mapInit/index.vue";
 import Pagination from "./components/Pagination/index.vue";
 import dialogPrintList from "./components/printListDialog/index.vue";
-import Empty from "./components/Empty.vue";
+import Empty from "./components/Empty/index.vue";
+import Page401 from "./components/errorPage/401.vue";
+import Page404 from "./components/errorPage/404.vue";
+import Hamburger from "./components/Hamburger/index.vue";
+import SvgIcon from "./components/SvgIcon/index.vue";
+import wxColor from "./components/Wxcolor/index.vue";
+
+
+
+
+
 
 const components = [
   Breadcrumb,
@@ -18,7 +27,12 @@ const components = [
   mapInit,
   Pagination,
   dialogPrintList,
-  Empty
+  Empty,
+  Page401,
+  Page404,
+  Hamburger,
+  SvgIcon,
+  wxColor
 ];
 
 const install = (Vue) => {

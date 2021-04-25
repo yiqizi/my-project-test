@@ -1,7 +1,7 @@
 import tinycolor from 'tinycolor2'
 
 function _colorChange (datas, oldHue) {
-  let data  = datas; 
+  let data  = datas;
   var alpha = data && data.a
   var color
 
@@ -58,7 +58,7 @@ function _colorChange (datas, oldHue) {
   }
 }
 
-import wx from '@/system/constant/wx.js';
+import wx from '../../system/constant/wx.js';
 export default {
   props: ['value'],
   data () {
