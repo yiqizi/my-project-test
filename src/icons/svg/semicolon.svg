@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>逗号</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="11.697554%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DAFFFD" offset="0%"></stop>
+            <stop stop-color="#14E1FC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="数据大屏-划过样式" transform="translate(-772.000000, -264.000000)" fill="url(#linearGradient-1)">
+            <g id="编组-12" transform="translate(660.000000, 180.000000)">
+                <polygon id="逗号" points="112 104 118.351072 104 124 84 113.688677 84"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

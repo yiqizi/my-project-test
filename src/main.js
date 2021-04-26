@@ -22,6 +22,8 @@ import form from "./components/Form/index.vue";
 import NumberInput from "./components/NumberInput/index.vue";
 import tableBase from "./components/TableBase/index.vue";
 import treeMenu from "./components/TreeMenu/index.vue";
+import  "./icons";
+
 
 
 

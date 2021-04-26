@@ -7,7 +7,7 @@
 ** @type {integer:正整数   float:两位小数     intLength：限制可输入的整数长度}
 */
 export default {
-  name:'NumberInput',
+  name:'numberInput',
   props: {
     value: {
         type: [String, Number]
