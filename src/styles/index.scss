@@ -1,21 +1,9 @@
-@import 'normalize.css/normalize.css'; // A modern alternative to CSS resets
 @import './variables.scss';
-@import './mixin.scss';
 @import './transition.scss';
 @import './element-ui.scss';
-@import './sidebar.scss';
-@import './sidebar-righter.scss';
-@import './decorate/publicStyle.scss';
-@import './decorate/iconfont.css';
 @import './animate.css';
-@import './shopStyle.scss';
 @import './confirm.scss';
-// @font-face {
-//   font-family: 'PingFangSC-Regular';
-//   src: url('../assets/font/PingFangSCRegular.ttf'); //你的资源目录
-//   font-weight: normal;
-//   font-style: normal;
-// }
+
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;

@@ -15,20 +15,11 @@ import Page404 from "./components/errorPage/404.vue";
 import Hamburger from "./components/Hamburger/index.vue";
 import SvgIcon from "./components/SvgIcon/index.vue";
 import wxColor from "./components/Wxcolor/index.vue";
-
-
 import chartBase from "./components/ChartBase/index.vue";
 import form from "./components/Form/index.vue";
 import NumberInput from "./components/NumberInput/index.vue";
 import tableBase from "./components/TableBase/index.vue";
 import treeMenu from "./components/TreeMenu/index.vue";
-import  "./icons";
-
-
-
-
-
-
 
 const components = [
   Breadcrumb,
@@ -62,7 +53,6 @@ const install = (Vue) => {
   // })
   components.forEach(component => {
     const whiteList = ['utils', '_routeTo', '_globalEvent', '_apis', 'confirm', 'invokeType', '$pcaa']
-    console.log('999999')
     for(let key in Vue.prototype) {
       if(whiteList.includes(key)) {
         component[key] = Vue.prototype[key]
@@ -71,7 +61,6 @@ const install = (Vue) => {
     // console.log('component.prototype.utils--', component.utils, component._apis)
     Vue.component(component.name, component);
   });
-  // Vue.component(Breadcrumb.name, Breadcrumb)
 }
 
 export default {

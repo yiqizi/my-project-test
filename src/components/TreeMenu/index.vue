@@ -221,10 +221,10 @@ i.icon {
   vertical-align: middle;
 }
 .icon.folder {
-  background-image: url('../../assets/images/finance/close.png');
+  background-image: url('../../assets/images/close.png');
 }
 .icon.folder-open {
-  background-image: url('../../assets/images/finance/open.png');
+  background-image: url('../../assets/images/open.png');
 }
 .tree-menu li {
   line-height: 1.5;

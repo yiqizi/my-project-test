@@ -21,7 +21,7 @@
 <script>
 import colorMixin from './color'
 import editableInput from './common/EditableInput.vue'
-import wx from '../../system/constant/wx.js';
+import wx from '../../system/wx.js';
 
 export default {
   name: 'wxColor',

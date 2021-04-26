@@ -58,7 +58,7 @@ function _colorChange (datas, oldHue) {
   }
 }
 
-import wx from '../../system/constant/wx.js';
+import wx from '../../system/wx.js';
 export default {
   props: ['value'],
   data () {

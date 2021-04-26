@@ -22,6 +22,7 @@ export default {
 			return `#icon-${this.iconClass}`;
 		},
 		svgClass() {
+			console.log('公共组件svg')
 			if (this.className) {
 				return "svg-icon " + this.className;
 			} else {
